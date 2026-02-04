@@ -11,12 +11,13 @@ export default function MusicasPage() {
         <PageTransition>
             <main className="min-h-screen bg-[#fffafa] p-6 relative overflow-hidden flex flex-col items-center">
 
-                {/* BOTÃO VOLTAR (Top Left) - Agora no topo para fácil acesso */}
+                {/* BOTÃO VOLTAR (Top Left) - Otimizado para Resposta Imediata */}
                 <div className="w-full max-w-4xl self-center mb-4 md:mb-8">
-                    <Link href="/">
+                    <Link href="/" scroll={false} prefetch={true}>
                         <motion.button
                             whileHover={{ x: -5 }}
-                            className="flex items-center gap-2 text-stone-400 hover:text-rose-500 transition-colors text-xs tracking-[0.3em] uppercase font-medium"
+                            whileTap={{ scale: 0.90 }} // Feedback visual imediato ao toque
+                            className="flex items-center gap-2 text-stone-400 hover:text-rose-500 transition-colors text-xs tracking-[0.3em] uppercase font-medium cursor-pointer"
                         >
                             ← Início
                         </motion.button>

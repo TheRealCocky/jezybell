@@ -36,12 +36,13 @@ export default function FotosPage() {
         <PageTransition>
             <main className="min-h-screen bg-[#f8f5f0] p-6 md:p-12 relative">
 
-                {/* BOTÃO VOLTAR (Top Left) */}
-                <div className="max-w-6xl mx-auto mb-8">
-                    <Link href="/">
+                {/* BOTÃO VOLTAR (Top Left) - Otimizado para Resposta Imediata */}
+                <div className="w-full max-w-4xl self-center mb-4 md:mb-8">
+                    <Link href="/" scroll={false} prefetch={true}>
                         <motion.button
                             whileHover={{ x: -5 }}
-                            className="flex items-center gap-2 text-stone-400 hover:text-rose-600 transition-colors text-sm tracking-widest uppercase font-sans font-medium"
+                            whileTap={{ scale: 0.90 }} // Feedback visual imediato ao toque
+                            className="flex items-center gap-2 text-stone-400 hover:text-rose-500 transition-colors text-xs tracking-[0.3em] uppercase font-medium cursor-pointer"
                         >
                             ← Início
                         </motion.button>
