@@ -6,20 +6,23 @@ import Link from "next/link";
 
 export default function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        // Pequena pausa para o iPhone limpar a memória da página anterior
+        const timer = setTimeout(() => setIsLoaded(true), 400);
+        return () => clearTimeout(timer);
     }, []);
 
     return (
-        /* REATIVADO: snap-y e snap-mandatory agora funcionam em todos os dispositivos */
-        <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth bg-slate-50 no-scrollbar">
+        /* ESSÊNCIA MANTIDA: O Snap só ativa quando a página está pronta para não travar o mobile */
+        <main className={`${isLoaded ? "snap-y snap-mandatory" : ""} h-screen overflow-y-scroll scroll-smooth bg-slate-50 no-scrollbar`}>
 
-            {/* BACKGROUND DECORATION - Otimizado para não travar o scroll */}
+            {/* BACKGROUND DECORATION - Fluidez máxima para o processador do iPhone */}
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
-                {/* Reduzi ligeiramente a opacidade e o blur para o Snap não 'tremer' no iPhone */}
-                <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-rose-200/30 blur-[80px] md:blur-[120px]" />
-                <div className="absolute bottom-[10%] -right-[10%] w-[40%] h-[40%] rounded-full bg-pink-200/30 blur-[80px] md:blur-[120px]" />
+                <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-rose-200/20 blur-[60px] md:blur-[120px]" />
+                <div className="absolute bottom-[10%] -right-[10%] w-[40%] h-[40%] rounded-full bg-pink-200/20 blur-[60px] md:blur-[120px]" />
             </div>
 
             {/* SECCÃO 1: Hero */}
@@ -38,7 +41,7 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                        className="text-rose-500 font-[family-name:var(--font-handwritten)] block mt-2"
+                        className="text-rose-500 font-[family-name:var(--font-handwritten)] block mt-2 drop-shadow-[0_2px_10px_rgba(244,63,94,0.1)]"
                     >
                         Jezybell
                     </motion.span>
@@ -60,7 +63,7 @@ export default function Home() {
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.8 }}
-                    viewport={{ margin: "-100px" }} // Garante que a animação comece no momento certo do snap
+                    viewport={{ margin: "-100px", once: true }}
                     className="max-w-3xl text-center"
                 >
                     <h2 className="text-3xl md:text-5xl font-serif leading-relaxed text-slate-700 italic">
@@ -86,7 +89,7 @@ export default function Home() {
                 <motion.div
                     animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.2, 0.1] }}
                     transition={{ repeat: Infinity, duration: 4 }}
-                    className="absolute w-64 h-64 bg-rose-300 rounded-full blur-[70px]"
+                    className="absolute w-64 h-64 bg-rose-300 rounded-full blur-[60px]"
                 />
 
                 <motion.div

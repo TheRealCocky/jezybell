@@ -11,15 +11,25 @@ export default function MusicasPage() {
         <PageTransition>
             <main className="min-h-screen bg-[#fffafa] p-6 relative overflow-hidden flex flex-col items-center">
 
-                {/* BOTÃO VOLTAR (Top Left) - Otimizado para Resposta Imediata */}
-                {/* BOTÃO VOLTAR - Versão para iPhone/Mobile */}
+                {/* BOTÃO VOLTAR - Versão Final Anti-Lag */}
                 <div className="w-full max-w-4xl self-center mb-4 md:mb-8">
                     <a
                         href="/"
+                        onClick={() => {
+                            // Este comando diz ao browser: "Esconde tudo agora e vai-te embora"
+                            // Ajuda o iPhone a focar na transição e não no processamento do player
+                            document.body.style.opacity = "0";
+                        }}
                         className="flex items-center gap-2 text-stone-400 hover:text-rose-500 transition-colors text-xs tracking-[0.3em] uppercase font-medium cursor-pointer"
                         style={{ display: 'flex', alignItems: 'center' }}
                     >
-                        ← Início
+                        <motion.span
+                            whileHover={{ x: -5 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="flex items-center gap-2"
+                        >
+                            ← Início
+                        </motion.span>
                     </a>
                 </div>
 
