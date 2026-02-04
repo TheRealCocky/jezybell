@@ -12,16 +12,15 @@ export default function MusicasPage() {
             <main className="min-h-screen bg-[#fffafa] p-6 relative overflow-hidden flex flex-col items-center">
 
                 {/* BOTÃO VOLTAR (Top Left) - Otimizado para Resposta Imediata */}
+                {/* BOTÃO VOLTAR - Versão para iPhone/Mobile */}
                 <div className="w-full max-w-4xl self-center mb-4 md:mb-8">
-                    <Link href="/" scroll={false} prefetch={true}>
-                        <motion.button
-                            whileHover={{ x: -5 }}
-                            whileTap={{ scale: 0.90 }} // Feedback visual imediato ao toque
-                            className="flex items-center gap-2 text-stone-400 hover:text-rose-500 transition-colors text-xs tracking-[0.3em] uppercase font-medium cursor-pointer"
-                        >
-                            ← Início
-                        </motion.button>
-                    </Link>
+                    <a
+                        href="/"
+                        className="flex items-center gap-2 text-stone-400 hover:text-rose-500 transition-colors text-xs tracking-[0.3em] uppercase font-medium cursor-pointer"
+                        style={{ display: 'flex', alignItems: 'center' }}
+                    >
+                        ← Início
+                    </a>
                 </div>
 
                 {/* Decoração de fundo */}
