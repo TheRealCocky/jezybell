@@ -1,0 +1,27 @@
+@import "tailwindcss"; /* Isso deve ser a primeira linha */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --parchment: #f2e0b5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-parchment: var(--parchment);
+  /* Esta linha abaixo faz a ponte com o que colocamos no layout.tsx */
+  --font-handwritten: var(--font-handwritten);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adicione isso para garantir que o texto da carta fique nítido */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
