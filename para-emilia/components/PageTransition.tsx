@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 export default function PageTransition({ children }: { children: React.ReactNode }) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            // Removemos o 'exit' e o 'y: 20' para evitar que o navegador
+            // tenha de recalcular a posição de elementos pesados (Spotify) ao sair.
+            transition={{ duration: 0.3, ease: "easeOut" }}
         >
             {children}
         </motion.div>
