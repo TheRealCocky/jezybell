@@ -107,7 +107,7 @@ export default function MusicasPage() {
                                         width="100%"
                                         height="380"
                                         // LINK CORRIGIDO PARA PLAYLIST DO YOUTUBE
-                                        src="https://www.youtube.com/embed/videoseries?list=PLHz_AreHm4dkTxs0shNSPvEkubHc8Ffq4"
+                                        src="https://www.youtube.com/embed/videoseries?list=PLQNcSh4v-rm9Y8JH-Q7Maisc_CI_nSJ4x&si=FX7pSQeeBpjtTnNH"
                                         title="YouTube playlist player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
