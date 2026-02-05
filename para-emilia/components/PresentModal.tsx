@@ -55,7 +55,7 @@ export default function PresentModal({ isOpen, onClose }: { isOpen: boolean, onC
                                         <p>Se você se sentir só, me chame para te dar um abraço bem apertado.</p>
                                         <p>Se você se sentir triste, me chame para lembrá-la dos momentos únicos que passamos juntos.</p>
                                         <p>Quando vejo as tuas fotos, olho nos teus olhos e da pra ver que tens na tua alma um lindo ser.</p>
-                                        <p>Tenho tanto medo de te perder, muix, possas eu te amo minha mulher.</p>
+                                        <p>Tenho tanto medo de te perder, miux, possas eu te amo minha mulher.</p>
                                         <p>Se você precisar de carinho, me chame para que possa ganhar colo e um cafuné.</p>
                                         <p>Se você precisar de ajuda, me chame. Não sei se posso trazer a solução, mas posso ajudá-la a encontrá-la.</p>
                                         <p>Se você precisar de amor, me chame para te dar beijos bem caprichados.</p>
