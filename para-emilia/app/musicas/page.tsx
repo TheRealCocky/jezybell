@@ -86,7 +86,7 @@ export default function MusicasPage() {
                                 >
                                     <iframe
                                         // ATENÇÃO: Substitui o ID abaixo pelo ID da tua playlist real
-                                        src="https://open.spotify.com/embed/playlist/2dtsJbUQx9h2JXCMjgn8Gb?si=4ce12790767d4b67"
+                                        src="https://open.spotify.com/embed/playlist/6z99JMLcbHiiINCls7XCJp?si=e261d1c4f81b4902"
                                         width="100%"
                                         height="380"
                                         frameBorder="0"
