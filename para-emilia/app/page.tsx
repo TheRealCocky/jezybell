@@ -86,9 +86,15 @@ export default function Home() {
                     Para a minha <br />
                     <motion.span initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3, duration: 0.8 }} className="text-rose-500 font-[family-name:var(--font-handwritten)] block mt-2 drop-shadow-[0_2px_10px_rgba(244,63,94,0.1)]">Jezybell</motion.span>
                 </h1>
-                <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute bottom-10 flex flex-col items-center gap-2">
-                    <span className="text-[10px] text-slate-400 uppercase tracking-[0.3em]">Desliza com amor</span>
-                    <div className="w-[1px] h-12 bg-gradient-to-b from-rose-400 to-transparent" />
+                <motion.div
+                    animate={{ y: [0, 10, 0] }}
+                    transition={{ repeat: Infinity, duration: 2 }}
+                    className="absolute bottom-16 flex flex-col items-center gap-3" // Aumentado bottom e gap
+                >
+    <span className="text-[11px] text-rose-500 font-bold uppercase tracking-[0.3em] drop-shadow-sm">
+        Desliza com amor
+    </span>
+                    <div className="w-[1.5px] h-14 bg-gradient-to-b from-rose-500 to-transparent" />
                 </motion.div>
             </section>
 
@@ -100,11 +106,39 @@ export default function Home() {
                         "A vida deu-me muitas razões para sorrir, mas tu és a minha <span className="underline decoration-rose-300 underline-offset-8 not-italic font-bold">favorita</span>."
                     </h2>
                 </motion.div>
-                <div className="absolute bottom-12 flex flex-col items-center gap-3 z-10">
-                    <motion.span animate={{ opacity: [0.4, 1, 0.4] }} transition={{ repeat: Infinity, duration: 2 }} className="text-[10px] text-rose-400 uppercase tracking-[0.4em] font-medium">Quase lá</motion.span>
+                <div className="absolute bottom-20 flex flex-col items-center gap-4 z-10">
+                    <motion.span
+                        initial={{ opacity: 0.6 }}
+                        animate={{ opacity: [0.4, 1, 0.4] }}
+                        transition={{ repeat: Infinity, duration: 2 }}
+                        className="text-[11px] text-rose-500 uppercase tracking-[0.4em] font-black" // Mais negrito (font-black)
+                    >
+                        Quase lá
+                    </motion.span>
+
                     <div className="relative flex flex-col items-center">
-                        <motion.div animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute -top-1 w-8 h-8 bg-rose-200 rounded-full blur-md" />
-                        <motion.div animate={{ y: [0, 12, 0], opacity: [0.3, 1, 0.3] }} transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }} className="text-rose-500 text-2xl font-light">↓</motion.div>
+                        {/* Pulso mais visível */}
+                        <motion.div
+                            animate={{ scale: [1, 2, 1], opacity: [0.4, 0, 0.4] }}
+                            transition={{ repeat: Infinity, duration: 2 }}
+                            className="absolute -top-1 w-10 h-10 bg-rose-300 rounded-full blur-lg"
+                        />
+
+                        {/* Seta mais robusta */}
+                        <motion.div
+                            animate={{
+                                y: [0, 15, 0],
+                                opacity: [0.5, 1, 0.5]
+                            }}
+                            transition={{
+                                repeat: Infinity,
+                                duration: 1.5,
+                                ease: "easeInOut"
+                            }}
+                            className="text-rose-600 text-3xl font-bold" // Aumentado tamanho e cor
+                        >
+                            ↓
+                        </motion.div>
                     </div>
                 </div>
             </section>
