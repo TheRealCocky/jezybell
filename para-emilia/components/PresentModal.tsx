@@ -52,13 +52,16 @@ export default function PresentModal({ isOpen, onClose }: { isOpen: boolean, onC
                                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#2d1b18]">Meu Amor,</h2>
 
                                     <div className="text-[1.3rem] md:text-[1.6rem] space-y-6">
-                                        <p>Se você se sentir só, me chame para te dar um abraço bem apertado.</p>
-                                        <p>Se você se sentir triste, me chame para lembrá-la dos momentos únicos que passamos juntos.</p>
+                                        <p>Independentemente de não estarmos fisicamente presente</p>
+                                        <p> Desde muito cedo que esse amor por ti em mim se se fez religião, tomando a minha cabeça e conquistou o meu coração </p>
+                                        <p>Sou muito grato por seres sempre aquela pessoa que sempre acreditou em nós</p>
+                                        <p>Espero que um dia eu coloque em teus dedos os aneis de saturno</p>
+                                        <p>Nunca duvides do que eu sinto por ti</p>
                                         <p>Quando vejo as tuas fotos, olho nos teus olhos e da pra ver que tens na tua alma um lindo ser.</p>
                                         <p>Tenho tanto medo de te perder, miux, possas eu te amo minha mulher.</p>
-                                        <p>Se você precisar de carinho, me chame para que possa ganhar colo e um cafuné.</p>
+                                        <p>Se você se sentir triste, me chame se tiveres triste, saiba que eu também estou.</p>
                                         <p>Se você precisar de ajuda, me chame. Não sei se posso trazer a solução, mas posso ajudá-la a encontrá-la.</p>
-                                        <p>Se você precisar de amor, me chame para te dar beijos bem caprichados.</p>
+                                        <p>Se você precisar de amor, me chame para te dar beijos.</p>
                                         <p className="pt-2 font-semibold italic">E se você precisar de mim, para o que quer que seja, me chame.</p>
 
                                         <p className="font-bold text-[1.4rem] md:text-[1.7rem] py-4 border-y border-[#3e2723]/10 text-rose-900/80">
@@ -66,11 +69,12 @@ export default function PresentModal({ isOpen, onClose }: { isOpen: boolean, onC
                                         </p>
 
                                         <p>Estarei com você em todos os momentos, sejam eles felizes ou não.</p>
+                                        <p>Se der certo ou der errado, se durar ou ter fim, fica a saber que o amor da minha vida minha baby és tu </p>
                                     </div>
 
                                     <div className="mt-12 flex flex-col items-end pr-4 italic">
                                         <p className="text-2xl font-bold">Com amor,</p>
-                                        <p className="text-3xl font-bold mt-1 text-rose-900">Euclides</p>
+                                        <p className="text-3xl font-bold mt-1 text-rose-900">Euclides Baltazar</p>
                                     </div>
 
                                     {/* BOTÃO VOLTAR REFORÇADO (Estilo botão de convite) */}

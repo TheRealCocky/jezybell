@@ -8,22 +8,21 @@ const minhasFotos = [
     {
         url: "https://res.cloudinary.com/dwp3wuum6/image/upload/v1770225053/2265eb62-889a-492a-9de4-c62576894889_gohfmu.jpg",
         legenda: "Essa aqui é meu papel de parede e muito hot.🌴🥵",
-        audioUrl: "https://res.cloudinary.com/teu-user/video/upload/v123/audio1.mp3"
+        audioUrl: "https://res.cloudinary.com/dwp3wuum6/video/upload/v1771020688/Emilia_avhb50.m4a"
     },
     {
         url: "https://res.cloudinary.com/dwp3wuum6/image/upload/v1770225466/3fc2fea5-c6b7-4a5f-a771-323ce74cbf9d_yw4myp.jpg",
         legenda: "Todos os dias me apaixono.🌼",
-        audioUrl: "https://res.cloudinary.com/teu-user/video/upload/v123/audio1.mp3"
     },
     {
         url: "https://res.cloudinary.com/dwp3wuum6/image/upload/v1770225841/44460c34-5055-4279-91f0-dab2ae7e4052_2_npe1qo.jpg",
         legenda: "Se criares uma religião, vou ser o primeio crente.🤎",
-        audioUrl: "https://res.cloudinary.com/teu-user/video/upload/v123/audio1.mp3"
+
     },
     {
         url: "https://res.cloudinary.com/dwp3wuum6/image/upload/v1770225595/f0b2d06b-4824-4c00-b6af-f3d19011b090_yvzyku.jpg",
         legenda: "No dia que voltares a paritlhar vou cobrar direitos autorais,hahaha.💕",
-        audioUrl: "https://res.cloudinary.com/teu-user/video/upload/v123/audio1.mp3"
+        audioUrl: "https://res.cloudinary.com/dwp3wuum6/video/upload/v1771020746/Emi_fzsvcz.m4a"
     },
     {
         url: "https://res.cloudinary.com/dwp3wuum6/image/upload/v1770225727/WhatsApp_Image_2025-04-09_at_18.38.10_2_d0gmko.jpg",
